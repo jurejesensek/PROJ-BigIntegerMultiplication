@@ -1,0 +1,9 @@
+{
+  "Algorithm" : {
+    "ShortName"     : "Karatsuba",
+    "Description"   : "Karatsuba divide and conquer algorithm for multiplication",
+    "Author"        : "MN_JJ",
+    "Date"          : "06, 2018",
+    "Language"      : "Java"
+  }
+}

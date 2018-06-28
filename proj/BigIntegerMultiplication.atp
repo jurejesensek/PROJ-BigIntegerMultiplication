@@ -6,7 +6,8 @@
   "Algorithms": [
     "Basic",
     "GradeSchool",
-    "FFT"
+    "FFT",
+    "Karatsuba"
   ],
   "TestSets": ["TestSet1"],
   "ProjectJARs": ["commons-math3-3.6.1.jar"],
