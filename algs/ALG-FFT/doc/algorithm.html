@@ -1,16 +1,16 @@
 <html>
-    <p>
-    FFT algorithm is number multiplication algorithm which uses Fast Fourier Transform (FFT). FFT is a way to compute the Fourier transform of a sequence A with length n in time \( \O(n logn) \) instead of \( \O(n^2) \) with the classical way.
-    Before the transformation, both large integers have to be present as polynomials A and B with selected base (base of numbers in java bytearrays is 256). For transformation to succeed, the sequence of coefficients in polynomial must be of length 2^n. As a result, we get two sequences A* and B* of complex numbers where we multiply like terms into sequence Z*. To get back integers, we must compute the inverse Fourier transform Z of Z* (with the conjugate FFT process).
-    The result is product of both large numbers, converted to sequence of integers (polynomial) with our selected base.
-    </p>
+	<p>
+	FFT algorithm is number multiplication algorithm which uses Fast Fourier Transform (FFT). FFT is a way to compute the Fourier transform of a sequence A with length <code>n</code> in time \( \O(n logn) \) instead of \( \O(n^2) \) with the classical way.
+	Before the transformation, both large integers have to be present as polynomials <code>A</code> and <code>B</code> with selected base (base of numbers in java bytearrays is 256). For transformation to succeed, the sequence of coefficients in polynomial must be of length \( (2^n) \). As a result, we get two sequences <code>A*</code> and <code>B*</code> of complex numbers where we multiply like terms into sequence <code>Z*</code>. To get back integers, we must compute the inverse Fourier transform <code>Z</code> of <code>Z*</code> (with the conjugate FFT process).
+	The result is product of both large numbers, converted to sequence of integers (polynomial) with our selected base.
+	</p>
+	
+	<p>
+		<b>Time complexity: </b> algorithm performs multiplication in time \( \O(n log(n)) \) surpassing classic algorithms with  \( \O(n^2) \). 
+	</p>
 
-    <p>
-	    <b>Time complexity: </b> algorithm performs multiplication in time \( \O(n log(n)) \) surpassing classic algorithms with  \( \O(n^2) \). 
-    </p>
-
-    <br>
-    <p>
-    Reference: <a href="http://numbers.computation.free.fr/Constants/Algorithms/fft.html">FFT based multiplication of large numbers</a>
-    </p>
+	<br>
+	<p>
+	Reference: <a href="http://numbers.computation.free.fr/Constants/Algorithms/fft.html">FFT based multiplication of large numbers</a>
+	</p>
 </html>
