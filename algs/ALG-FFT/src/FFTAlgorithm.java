@@ -27,7 +27,7 @@ public class FFTAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
         Complex [] prvi = f1.transform(first, TransformType.FORWARD);
         Complex [] drugi = f1.transform(second, TransformType.FORWARD);
 
-        Complex[] zmnozek = new Complex[prvi.length];
+        Complex [] zmnozek = new Complex[prvi.length];
 
         for (int i= 0; i<prvi.length; i++) {
             zmnozek[i] = prvi[i].multiply(drugi[i]);
@@ -35,21 +35,15 @@ public class FFTAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
 
         Complex[] z = f1.transform(zmnozek, TransformType.INVERSE);
 
-
-        for (int i = 0; i < z.length; i++) {
-            System.out.println(z[i].getReal());
-            System.out.println(z[i].getImaginary());
-        }
-
         int [] rezultat = new int[z.length];
         int prenos = 0;
         for (int i = 0; i <rezultat.length; i++) {
             int trenutniPrenos = prenos;
             prenos = 0;
 
-            double koeficient = 0;
+            int koeficient = 0;
             if (i < z.length) {
-                koeficient = z[i].getReal();
+                koeficient = (int)Math.round(z[i].getReal());
             }
 
             while (koeficient >= 256) {
@@ -57,18 +51,18 @@ public class FFTAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
                 prenos++;
             }
 
-            double pristevek = koeficient + trenutniPrenos;
+            int pristevek = koeficient + trenutniPrenos;
             while (pristevek >= 256) {
                 pristevek-=256;
                 prenos++;
             }
-
-            rezultat[i] = (byte)(int)pristevek;
+            
+            rezultat[i] = pristevek;
         }
 
         return rezultat;
     }
-    
+
     static double [][] prepareForFourier (byte[] first, byte[] second) {
 
         //For FFT to work the length of arrays must be 2^n
@@ -86,8 +80,6 @@ public class FFTAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
 
         //See which one is longer, double the length
         int len = Math.max(first_len, second_len) * 2;
-        System.out.println(first.length);
-
 
         double prepared[][] = new double[2][len];
         for (int i = 0; i < first.length; i++) {
@@ -99,12 +91,5 @@ public class FFTAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
 
         return prepared;
     }
-
-  // TODO: write adequate signiture of the execute method 
-  //       (as defined in BigIntegerMultiplicationAbsAlgorithm.java)   
-  //@Override
-  //public void execute(...) {
-  //  .... write method body
-  //} 
     
 }
