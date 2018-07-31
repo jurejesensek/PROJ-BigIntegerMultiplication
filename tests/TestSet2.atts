@@ -1,0 +1,13 @@
+{
+  "TestSet": {
+    "Name"             : "TestSet2",
+
+    "ShortName"        : "TS2",
+    "Description"      : "Special types of numbers, such as primes, multiples of 2, odd numbers, multiplying by 1, etc.",
+    "N"                : "5",
+    "TestRepeat"       : "15",
+    "TimeLimit"        : "10",
+
+    "TestSetDescHTML"  : "TestSet2.html"
+  }
+}

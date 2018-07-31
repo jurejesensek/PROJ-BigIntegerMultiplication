@@ -1,7 +1,7 @@
 {"Project": {
   "Name": "BigIntegerMultiplication",
-  "Description": "short_project_description",
-  "Author": "author_name",
+  "Description": "Big integer multiplication is used when the integers are very large, most often larger than the largest number storable in a processor register.",
+  "Author": "MN, JJ",
   "Date": "06, 2018",
   "Algorithms": [
     "Basic",
@@ -9,7 +9,7 @@
     "FFT",
     "Karatsuba"
   ],
-  "TestSets": ["TestSet1"],
+  "TestSets": ["TestSet1", "TestSet2", "TestSet3"],
   "ProjectJARs": ["commons-math3-3.6.1.jar"],
   "AlgorithmJARs": ["commons-math3-3.6.1.jar"],
   "EMExecFamily": "",

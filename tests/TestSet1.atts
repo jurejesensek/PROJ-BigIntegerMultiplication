@@ -2,10 +2,10 @@
   "TestSet": {
     "Name"             : "TestSet1",
 
-    "ShortName"        : "testset_short_name",
-    "Description"      : "testset_description",
-    "N"                : "3",
-    "TestRepeat"       : "10",
+    "ShortName"        : "TS1",
+    "Description"      : "Random numbers, ranging from those fitting into Java's long data type, and some which are larger",
+    "N"                : "8",
+    "TestRepeat"       : "15",
     "TimeLimit"        : "10",
 
     "TestSetDescHTML"  : "TestSet1.html"
