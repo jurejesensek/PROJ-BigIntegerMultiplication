@@ -6,7 +6,10 @@ public class KaratsubaAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
 
     @Override
     protected void execute(byte[] firstFactor, byte[] secondFactor, byte[] result) {
-        result = karatsuba(new BigInteger(firstFactor), new BigInteger(secondFactor)).toByteArray();
+        byte[] r = karatsuba(new BigInteger(firstFactor), new BigInteger(secondFactor)).toByteArray();
+        for (int i = 0; i < r.length; i++) {
+            result[i] = r[i];
+        }
     }
 
     private BigInteger karatsuba(BigInteger first, BigInteger second) {
