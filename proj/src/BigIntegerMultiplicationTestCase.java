@@ -1,9 +1,5 @@
 import si.fri.algotest.entities.TestCase;
 
-/**
- * 
- * @author admin
- */
 public class BigIntegerMultiplicationTestCase extends TestCase {
 
     /**
@@ -13,7 +9,6 @@ public class BigIntegerMultiplicationTestCase extends TestCase {
     
     @Override
     public String toString() {
-        //Implementirajo metodo toString
         return super.toString();
     }
     

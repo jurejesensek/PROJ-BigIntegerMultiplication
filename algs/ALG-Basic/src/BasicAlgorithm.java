@@ -1,16 +1,7 @@
-/**
- *
- * @author ...
- */
 import java.math.BigInteger;
 
 public class BasicAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
-  // TODO: write adequate signiture of the execute method 
-  //       (as defined in BigIntegerMultiplicationAbsAlgorithm.java)   
-  //@Override
-  //public void execute(...) {
-  //  .... write method body
-  //} 
+
     public void execute(byte[] first, byte[] second, byte[] result) {
         BigInteger f = new BigInteger(first);
         BigInteger s = new BigInteger(second);

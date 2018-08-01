@@ -1,15 +1,5 @@
-/**
- *
- * @author ...
- */
 public class GradeSchoolAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
 
-  // TODO: write adequate signiture of the execute method 
-  //       (as defined in BigIntegerMultiplicationAbsAlgorithm.java)   
-  //@Override
-  //public void execute(...) {
-  //  .... write method body
-  //}
     @Override
     public void execute(byte[] first, byte[] second, byte[] result) {
         byte[] done = multiply(first, second);
@@ -20,10 +10,7 @@ public class GradeSchoolAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
         
     }
     
-    
     public static byte[] multiply(byte[] f1, byte[] f2) {
-        //System.out.println("Multiply");
-
         int[][] t = new int[f2.length][f1.length + f2.length];
         int dolzina = f1.length + f2.length;
 
@@ -49,17 +36,8 @@ public class GradeSchoolAlgorithm extends BigIntegerMultiplicationAbsAlgorithm {
                 }
                 t[i][f1.length - j + i + 1] = vstavi;
             }
-            t[i][0 + i] = prenos;
+            t[i][i] = prenos;
         }
-
-        /*
-        for (int i = 0; i<t.length; i++) {
-            System.out.println();
-            for (int j = 0; j<t[i].length; j++) {
-                System.out.print(t[i][j]);
-                System.out.print(" ");
-            }
-        }*/
 
         int[] result = new int [dolzina];
         int prenos = 0;
