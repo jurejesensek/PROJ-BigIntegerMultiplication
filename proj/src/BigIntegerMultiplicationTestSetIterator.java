@@ -28,12 +28,13 @@ public class BigIntegerMultiplicationTestSetIterator extends DefaultTestSetItera
         String faktor_1 = fields[2];
         String faktor_2 = fields[3];
         String result = fields[4];
+        int nn = result.length();
 
         // do not delete the following lines; test-id parameter is compulsory
 
         EVariable testIDVar = EResult.getTestIDParameter("Test-" + Integer.toString(lineNumber));
         EVariable parameter1 = new EVariable("Test", "Test name", VariableType.STRING, testName);
-        EVariable parameter0 = new EVariable("N", "The size of the text", VariableType.INT, 3);
+        EVariable parameter0 = new EVariable("N", "The size of the text", VariableType.INT, nn);
         EVariable parameter2 = new EVariable("Factor1", "First factor", VariableType.STRING, faktor_1);
         EVariable parameter3 = new EVariable("Factor2", "Second factor", VariableType.STRING, faktor_2);
         EVariable parameter4 = new EVariable("Result", "Result of the multiplication", VariableType.STRING, result);
