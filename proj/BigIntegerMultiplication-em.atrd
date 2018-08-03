@@ -5,7 +5,7 @@
     "Parameters":   [	    
       {
        "Name":        "N",             
-       "Description": "The size of the test", 
+       "Description": "The size of the test (number of digits of product)", 
        "Type":        "int"       
       }
     ], 
