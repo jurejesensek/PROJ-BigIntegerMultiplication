@@ -2,9 +2,9 @@
   "Algorithm" : {	
 
    "Name"           : "FFT",
-   "ShortName"      : "algorithm_short_name",             
-   "Description"    : "algorithm_dascription",
-   "Author"         : "author_name",
+   "ShortName"      : "Fast-Fourier Transform",             
+   "Description"    : "Multiplication with Fast-Fourier Transformation",
+   "Author"         : "MN, JJ",
    "Date"           : "06, 2018",
    "Classes"        : ["FFTAlgorithm.java"],
    "MainClassName"  : "FFTAlgorithm",

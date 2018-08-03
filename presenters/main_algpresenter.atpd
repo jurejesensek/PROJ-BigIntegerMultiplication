@@ -1,0 +1,17 @@
+{"Presenter":
+  { 
+    "Title"       : "Minimal time of algorithm execution",
+    "ShortTitle"  : "Tmin vs N",
+    "Description" : "Minimal time of algorithm execution (Y axis) compared to number of digits in test cases (X axis)",
+    "Query"       : "main_algquery",
+    "HasGraph"    : "true",
+    "Xaxis"       : "ID",
+    "Yaxes"       : ["*.Tmin"],
+    "GraphTypes"  : "line",
+    "XaxisLabel"  : "[Number of digits in the product]",
+    "YaxisLabel"  : "[Minimal time of algortithm execution]",
+    "HasTable"    : "true",
+    "Columns"     : ["N", "*.Tmin"]
+  }
+}
+

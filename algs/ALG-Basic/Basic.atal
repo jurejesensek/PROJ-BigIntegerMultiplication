@@ -2,9 +2,9 @@
   "Algorithm" : {	
 
    "Name"           : "Basic",
-   "ShortName"      : "algorithm_short_name",             
-   "Description"    : "algorithm_dascription",
-   "Author"         : "author_name",
+   "ShortName"      : "Basic Multiplication",             
+   "Description"    : "Multiplication with method multiply",
+   "Author"         : "MN, JJ",
    "Date"           : "06, 2018",
 
 
