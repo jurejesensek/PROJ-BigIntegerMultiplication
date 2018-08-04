@@ -25,18 +25,18 @@ public class BigIntegerMultiplicationTestSetIterator extends DefaultTestSetItera
 
         String testName = fields[0];
         String group = fields[1];
-        String faktor_1 = fields[2];
-        String faktor_2 = fields[3];
+        String factor1 = fields[2];
+        String factor2 = fields[3];
         String result = fields[4];
-        int nn = result.length();
+        int numOfDigits = result.length();
 
         // do not delete the following lines; test-id parameter is compulsory
 
         EVariable testIDVar = EResult.getTestIDParameter("Test-" + Integer.toString(lineNumber));
         EVariable parameter1 = new EVariable("Test", "Test name", VariableType.STRING, testName);
-        EVariable parameter0 = new EVariable("N", "The size of the text", VariableType.INT, nn);
-        EVariable parameter2 = new EVariable("Factor1", "First factor", VariableType.STRING, faktor_1);
-        EVariable parameter3 = new EVariable("Factor2", "Second factor", VariableType.STRING, faktor_2);
+        EVariable parameter0 = new EVariable("N", "Number of digits in result number", VariableType.INT, numOfDigits);
+        EVariable parameter2 = new EVariable("Factor1", "First factor", VariableType.STRING, factor1);
+        EVariable parameter3 = new EVariable("Factor2", "Second factor", VariableType.STRING, factor2);
         EVariable parameter4 = new EVariable("Result", "Result of the multiplication", VariableType.STRING, result);
         EVariable parameter5 = new EVariable("Group", "A name of a group of tests", VariableType.STRING, group);
 
@@ -75,8 +75,8 @@ public class BigIntegerMultiplicationTestSetIterator extends DefaultTestSetItera
             break;
         }
 
-        tCase.firstFactor = new BigInteger(new BigInteger(faktor_1).toString(16), 16).toByteArray();
-        tCase.secondFactor = new BigInteger(new BigInteger(faktor_2).toString(16), 16).toByteArray();
+        tCase.firstFactor = new BigInteger(new BigInteger(factor1).toString(16), 16).toByteArray();
+        tCase.secondFactor = new BigInteger(new BigInteger(factor2).toString(16), 16).toByteArray();
         tCase.result = new BigInteger(new BigInteger(result).toString(16), 16).toByteArray();
 
         return tCase;
