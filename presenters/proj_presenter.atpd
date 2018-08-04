@@ -5,11 +5,11 @@
     "Description" : "Maximum time of algorithm execution (Y axis) compared to number of digits in test cases (X axis)",
     "Query"       : "proj_query",
     "HasGraph"    : "true",
-    "Xaxis"       : "ID",
+    "Xaxis"       : "N",
     "Yaxes"       : ["*.Tmax"],
     "GraphTypes"  : "line",
     "XaxisLabel"  : "[Number of digits in the product]",
-    "YaxisLabel"  : "[Maximum time of algortithm execution]",
+    "YaxisLabel"  : "[Maximum time of algorithm execution]",
     "HasTable"    : "true",
     "Columns"     : ["N", "*.Tmax"]
   }
