@@ -1,5 +1,8 @@
-Karatsuba;TestSet2;Test-1;DONE;3;217;64;139;346;2091;OK
-Karatsuba;TestSet2;Test-2;DONE;3;2395;282;605;2395;9078;OK
-Karatsuba;TestSet2;Test-3;DONE;3;84;41;58;84;878;OK
-Karatsuba;TestSet2;Test-4;DONE;3;452;57;183;452;2750;OK
-Karatsuba;TestSet2;Test-5;DONE;3;89;44;59;89;894;OK
+Karatsuba;TestSet2;Test-1;DONE;22;510;90;247;510;3714;OK
+Karatsuba;TestSet2;Test-2;DONE;24;409;55;225;779;3385;OK
+Karatsuba;TestSet2;Test-3;DONE;82;1419;150;432;1419;6489;OK
+Karatsuba;TestSet2;Test-4;DONE;136;4453;285;852;4453;12782;OK
+Karatsuba;TestSet2;Test-5;DONE;463;711;92;213;711;3195;OK
+Karatsuba;TestSet2;Test-6;DONE;1015;88;42;70;96;1057;OK
+Karatsuba;TestSet2;Test-7;DONE;1015;195;69;88;195;1328;OK
+Karatsuba;TestSet2;Test-8;DONE;1067;93;51;82;149;1240;OK

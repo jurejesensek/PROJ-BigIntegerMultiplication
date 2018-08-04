@@ -1,0 +1,13 @@
+{
+  "TestSet": {
+    "Name"             : "TestSet4",
+
+    "ShortName"        : "TS4",
+    "Description"      : "Quite large numbers, in the range of 1000-2000 digits",
+    "N"                : "20",
+    "TestRepeat"       : "10",
+    "TimeLimit"        : "10",
+
+    "TestSetDescHTML"  : "TestSet4.html"
+  }
+}

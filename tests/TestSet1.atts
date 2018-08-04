@@ -4,7 +4,7 @@
 
     "ShortName"        : "TS1",
     "Description"      : "Random numbers, ranging from those fitting into Java's long data type, and some which are larger",
-    "N"                : "8",
+    "N"                : "10",
     "TestRepeat"       : "15",
     "TimeLimit"        : "10",
 

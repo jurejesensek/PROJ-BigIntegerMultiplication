@@ -1,0 +1,13 @@
+{
+  "TestSet": {
+    "Name"             : "TestSet5",
+
+    "ShortName"        : "TS5",
+    "Description"      : "Numbers in range of 50-4100 digits",
+    "N"                : "50",
+    "TestRepeat"       : "10",
+    "TimeLimit"        : "10",
+
+    "TestSetDescHTML"  : "TestSet5.html"
+  }
+}
